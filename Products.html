@@ -258,7 +258,13 @@
 <script type="text/javascript"> Cufon.now(); </script>
 <script>
 	$(document).ready(function() {
-		//tabs.init();
+		tabs.init();
+		$.fn.preload = function() {
+			this.each(function(){
+				$('<img/>')[0].src = this;
+			});
+		}	
+		$(['images/menu_icon1_active.gif','images/menu_icon2_active.gif']).preload();
 	})
 </script>
 <script type="text/javascript" src="js/productsDisp.js"></script>
