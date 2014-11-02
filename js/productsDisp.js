@@ -1,7 +1,6 @@
 $(function()	{
 
 	
-		$(document).on("pagecontainerload", function() {		
 			$(".productsAlign").append(function()	{
 				$er12 = $(this).parent().height();
 				$(this).css("height",$er12+"px");
@@ -10,7 +9,6 @@ $(function()	{
 				$er13 = $(this).children("figure").height();	
 				$(this).children("figure").css("margin-top",(($er12/2)-($er13/2))+"px");
 			});
-		});
 
 	/*$(".productBox").stop(true,true).mouseenter(function()	{
 		$tmpWidth = $(this).width();
